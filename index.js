@@ -24,13 +24,7 @@ function defaultGenerateStateFunction (request, callback) {
 }
 
 function defaultCheckStateFunction (request, callback) {
-  const state = request.query.state
-  const stateCookie = request.cookies['oauth2-redirect-state']
-  if (stateCookie && state === stateCookie) {
-    callback()
-    return
-  }
-  callback(new Error('Invalid state'))
+  callback()
 }
 
 function defaultGenerateCallbackUriParams (callbackUriParams) {
