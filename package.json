@@ -1,6 +1,6 @@
 {
-  "name": "@fastify/oauth2",
-  "version": "8.0.1",
+  "name": "fastify-oauth2-no-state-check",
+  "version": "8.0.2",
   "description": "Perform login using oauth2 protocol",
   "main": "index.js",
   "type": "commonjs",
